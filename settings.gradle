@@ -5,7 +5,7 @@ evaluate(new File(
   settingsDir,
   'flutter_module/.android/include_flutter.groovy'
 ))
-rootProject.name = "AndroidProject"
+rootProject.name = "FlutterNative"
 
 include ':flutter_module'
 
