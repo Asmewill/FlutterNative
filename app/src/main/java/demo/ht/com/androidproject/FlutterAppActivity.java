@@ -1,11 +1,7 @@
 package demo.ht.com.androidproject;
 
-import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.BatteryManager;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -15,14 +11,8 @@ import demo.ht.com.plugins.BasicMessageChannelPlugin;
 import demo.ht.com.plugins.EventChannelPlugin;
 import demo.ht.com.plugins.MethodChannelPlugin;
 import io.flutter.embedding.android.FlutterActivity;
-import io.flutter.embedding.android.FlutterImageView;
-import io.flutter.embedding.android.FlutterView;
-import io.flutter.embedding.android.RenderMode;
 import io.flutter.embedding.android.TransparencyMode;
 import io.flutter.embedding.engine.FlutterEngine;
-import io.flutter.plugin.common.EventChannel;
-import io.flutter.plugin.common.MethodCall;
-import io.flutter.plugin.common.MethodChannel;
 
 public class FlutterAppActivity extends FlutterActivity implements IShowMessage {
     private BasicMessageChannelPlugin basicMessageChannelPlugin;
@@ -58,7 +48,7 @@ public class FlutterAppActivity extends FlutterActivity implements IShowMessage 
         super.onStart();
         //使用BasicMsgChannel传递数据
         String initParam = getIntent().getStringExtra(INIT_PARAMS);
-        this.sendMessage(initParam);
+        sendMessage(initParam);
     }
 
     /**

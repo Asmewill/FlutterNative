@@ -1,19 +1,11 @@
 package demo.ht.com.activity_pages;
 
-import androidx.annotation.NonNull;
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
-import demo.ht.com.androidproject.App;
 import demo.ht.com.androidproject.FlutterAppActivity;
 import demo.ht.com.androidproject.R;
-import io.flutter.embedding.android.FlutterActivity;
-import io.flutter.embedding.android.FlutterFragment;
-import io.flutter.embedding.android.FlutterView;
-import io.flutter.embedding.android.TransparencyMode;
-
-import android.os.Bundle;
-import android.transition.TransitionManager;
-import android.view.View;
-import android.widget.LinearLayout;
 
 public class ToFlutterPageActivity extends AppCompatActivity {
 
@@ -41,7 +33,7 @@ public class ToFlutterPageActivity extends AppCompatActivity {
 
 
                 //过渡动画跳转Flutter页面
-                FlutterAppActivity.start(ToFlutterPageActivity.this,"我是过渡动画",4);
+              FlutterAppActivity.start(ToFlutterPageActivity.this,"我是过渡动画",4);
 
                 /*
                  * 进入Flutter页面 通过路由来指定页面

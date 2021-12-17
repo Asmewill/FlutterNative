@@ -6,8 +6,6 @@ import android.os.Bundle;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
 
 import androidx.appcompat.app.AppCompatActivity;
 import demo.ht.com.activity_pages.BasicMsgChannelActivity;
@@ -28,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         /*
          * 跳转Flutter页面
          */

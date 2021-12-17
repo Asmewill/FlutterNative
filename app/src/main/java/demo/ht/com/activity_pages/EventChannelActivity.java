@@ -1,16 +1,15 @@
 package demo.ht.com.activity_pages;
 
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import demo.ht.com.androidproject.FlutterAppActivity;
 import demo.ht.com.androidproject.R;
 import demo.ht.com.utils.BatteryReceiver;
-
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
 
 public class EventChannelActivity extends AppCompatActivity {
 
@@ -28,8 +27,8 @@ public class EventChannelActivity extends AppCompatActivity {
 
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                FlutterAppActivity.start(EventChannelActivity.this,textView.getText().toString(),2);
+            public void onClick(View v) { FlutterAppActivity.start(EventChannelActivity.this,textView.getText().toString(),2);
+
             }
         });
 
